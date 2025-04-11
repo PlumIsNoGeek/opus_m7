@@ -385,9 +385,9 @@ static OPUS_INLINE int celt_isnan(float x)
 
 #ifndef GLOBAL_STACK_SIZE
 #ifdef FIXED_POINT
-#define GLOBAL_STACK_SIZE 120000
+#define GLOBAL_STACK_SIZE 16000
 #else
-#define GLOBAL_STACK_SIZE 120000
+#define GLOBAL_STACK_SIZE 16000
 #endif
 #endif
 

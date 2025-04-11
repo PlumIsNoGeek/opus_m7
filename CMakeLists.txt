@@ -548,7 +548,7 @@ if(NOT OPUS_DISABLE_INTRINSICS)
     endif()
   endif()
 
-  if(COMPILER_SUPPORT_NEON)
+  if(COMPILER_SUPPORT_NEON AND OPUS_USE_NEON)
     if(OPUS_MAY_HAVE_NEON)
       if(RUNTIME_CPU_CAPABILITY_DETECTION)
         message(STATUS "OPUS_MAY_HAVE_NEON enabling runtime detection")
